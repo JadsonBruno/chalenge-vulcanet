@@ -39,6 +39,7 @@
 .btns {
   display: flex;
   margin-left: 20px;
+  align-items: center;
 }
 
 .btns button {
@@ -48,6 +49,14 @@
   box-sizing: border-box;
   box-shadow: 0px 1px 0px #e5e5e5;
   border-radius: 4px;
+}
+
+.btns .btnEdit {
+  color: #00a7cf;
+}
+
+.btns .btnTrash {
+  color: #e33e1a;
 }
 
 .btns button:first-child {
@@ -73,9 +82,18 @@ ul {
   list-style: none;
 }
 
+.chat-date {
+  margin-bottom: 30px;
+}
+
 .chat-date li {
+  display: flex;
   margin-top: 10px;
-  margin-left: 20px;
+}
+
+.chat-date .date-img {
+  color: #a7b6c2;
+  margin-right: 8px;
 }
 
 .comments {
@@ -103,8 +121,21 @@ ul {
 }
 
 .list-info-contact li {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
   margin-left: 20px;
+  font-size: 12px;
+}
+
+.list-info-contact li .date-img {
+  font-size: 24px;
+  color: #a7b6c2;
+  margin-right: 16px;
+}
+
+.contact-info {
+  margin-top: 20px;
 }
 
 .contact-method {

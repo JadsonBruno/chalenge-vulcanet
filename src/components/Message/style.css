@@ -1,0 +1,80 @@
+.contact {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.contact .img-user {
+  width: 24px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  margin-right: 10px;
+}
+
+.contact .user-name {
+  color: #636466;
+  font-weight: bold;
+}
+
+.contact .check {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+}
+
+.contact .user-name span {
+  font-weight: normal;
+}
+
+.message-content-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.message-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  background: #ffffff;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 10px 10px 10px;
+  margin-left: 20px;
+  padding: 15px;
+  margin-top: 28px;
+}
+
+.message-content p {
+  color: #333333;
+}
+
+.message-loged-user {
+  display: flex;
+}
+
+.message-logged-user {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 20px;
+}
+.message-logged-user .contact {
+  flex-direction: row-reverse;
+}
+
+.message-logged-user .contact .img-user {
+  margin-left: 10px;
+}
+
+.message-logged-user .contact .check {
+  margin-right: 10px;
+}
+
+.message-logged-user .message-content {
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px 0px 10px 10px;
+  background: #dcf8c6;
+}

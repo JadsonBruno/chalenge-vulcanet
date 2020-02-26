@@ -1,6 +1,8 @@
 import React from "react";
 import "./style.css";
 import ContactElement from "../ContactElement";
+import iconAdd from "../../assets/img/add.svg";
+import iconArrow from "../../assets/img/arrow.svg";
 
 export default function Contact({ data }) {
   return (
@@ -13,16 +15,20 @@ export default function Contact({ data }) {
           </p>
         </div>
         <div className="arrow">
-          <select name="" id=""></select>
+          <img src={iconArrow} alt="" />
         </div>
       </div>
       <input type="text" />
       <div className="handle-chat">
         <div className="status">
           <span>EM ANDAMENTO</span>
-          <select name="" id=""></select>
+          <div className="arrow">
+            <img src={iconArrow} alt="" />
+          </div>
         </div>
-        <button>+</button>
+        <button>
+          <img src={iconAdd} alt="" />
+        </button>
       </div>
       <ul className="contacts">
         {data.map(contact => (

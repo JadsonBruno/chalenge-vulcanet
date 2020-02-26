@@ -10,8 +10,8 @@ export default function ContactElement({ contact }) {
           {contact.name} <span>{contact.company}</span>
         </div>
       </div>
-      {contact.messages.length > 0 && (
-        <div className="count-msg">{contact.messages.length}</div>
+      {contact.messages > 0 && (
+        <div className="count-msg">{contact.messages}</div>
       )}
     </li>
   );

@@ -1,4 +1,10 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faPenAlt,
+  faTrashAlt,
+  faEnvelope
+} from "@fortawesome/free-solid-svg-icons";
 import "./style.css";
 
 export default function() {
@@ -11,23 +17,33 @@ export default function() {
         </div>
       </div>
       <div className="btns">
-        <button></button>
-        <button>E</button>
+        <button className="btnEdit">
+          <FontAwesomeIcon icon={faPenAlt} />
+        </button>
+        <button className="btnTrash">
+          <FontAwesomeIcon icon={faTrashAlt} />
+        </button>
       </div>
       <div className="latest-chat">
         <span className="first-span">ÚLTIMAS CONVERSAS</span>
         <ul className="chat-date">
           <li>
-            <img src="" alt="" className="date-img" />
+            <div className="date-img">
+              <FontAwesomeIcon icon={["fab", "whatsapp"]} />
+            </div>
             25/09/2019 (10 dias atrás)
           </li>
           <li>
-            <img src="" alt="" className="date-img" />
-            25/09/2019 (10 dias atrás)
+            <div className="date-img">
+              <FontAwesomeIcon icon={["fab", "whatsapp"]} />
+            </div>
+            15/09/2019 (20 dias atrás)
           </li>
           <li>
-            <img src="" alt="" className="date-img" />
-            25/09/2019 (10 dias atrás)
+            <div className="date-img">
+              <FontAwesomeIcon icon={["fab", "skype"]} />
+            </div>
+            15/06/2019 (100 dias atrás)
           </li>
         </ul>
       </div>
@@ -42,21 +58,27 @@ export default function() {
       <div className="contact-info">
         <ul className="list-info-contact">
           <li>
-            <img src="" alt="" className="date-img" />
+            <div className="date-img">
+              <FontAwesomeIcon icon={["fab", "whatsapp"]} />
+            </div>
             <div className="contact-method">
               <span>WHATSAPP</span>
               <span>55 (19) 1234-5678</span>
             </div>
           </li>
           <li>
-            <img src="" alt="" className="date-img" />
+            <div className="date-img email">
+              <FontAwesomeIcon icon={faEnvelope} />
+            </div>
             <div className="contact-method">
               <span>EMAIL</span>
               <span>joao@silva.com.br</span>
             </div>
           </li>
           <li>
-            <img src="" alt="" className="date-img" />
+            <div className="date-img">
+              <FontAwesomeIcon icon={["fab", "skype"]} />
+            </div>
             <div className="contact-method">
               <span>SKYPE</span>
               <span>@joao_silva</span>

@@ -43,9 +43,10 @@
   color: rgba(255, 255, 255, 0.527);
 }
 
-.user .arrow select {
-  background: linear-gradient(0deg, #168b7d, #168b7d);
-  outline: 0;
+.arrow {
+  margin-left: 10px;
+  align-self: center;
+  padding-bottom: 10px;
 }
 
 .side-contact input {

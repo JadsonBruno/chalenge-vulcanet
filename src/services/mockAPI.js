@@ -4,17 +4,7 @@ const data = [
     avatar: "",
     name: "João da Silva",
     company: "ACME INC",
-    messages: [
-      {
-        text: "something"
-      },
-      {
-        text: "something"
-      },
-      {
-        text: "something"
-      }
-    ]
+    messages: 3
   },
   {
     id: Math.random(),
