@@ -1,0 +1,64 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contact-element {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  width: 100%;
+}
+
+.contact-element:first-child {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.contact-element .img {
+  width: 48px;
+  height: 48px;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0px 10px 0px 15px;
+}
+
+.contact-element .info-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #fff;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 16px;
+  margin-right: 33px;
+}
+
+.contact-element .text-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.count-msg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background: #e33e1a;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 100px;
+  color: #fff;
+  margin-right: 14px;
+  font-size: 10px;
+}
+
+.text-contact span {
+  font-size: 0.8em;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.527);
+}

@@ -1,0 +1,105 @@
+.side-contact {
+  width: 310px;
+  height: 1070px;
+  background: url("../../assets/img/Union.svg") no-repeat bottom;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 280px;
+  height: 38px;
+  background: inherit;
+  margin: 10px 15px 10px 15px;
+}
+
+.user-info {
+  display: flex;
+}
+
+.user-info .img {
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  margin-right: 10px;
+}
+
+.user p {
+  display: flex;
+  flex-direction: column;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 16px;
+  color: #fff;
+}
+
+.user p span {
+  font-size: 0.8em;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.527);
+}
+
+.user .arrow select {
+  background: linear-gradient(0deg, #168b7d, #168b7d);
+  outline: 0;
+}
+
+.side-contact input {
+  background: #ffffff26 url("../../assets/img/searchIcon.svg") no-repeat 260px
+    center;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  padding: 12px 8px;
+  width: 270px;
+  outline: 0;
+  color: #fff;
+  margin: 0px 15px 10px 15px;
+}
+
+.handle-chat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  color: #fff;
+  margin: 7px 0 10px 15px;
+  width: 100%;
+}
+
+.status {
+  width: 137px;
+}
+
+.status span {
+  height: 38px;
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  margin-right: 7px;
+}
+
+.handle-chat button {
+  width: 38px;
+  background: inherit;
+  color: #fff;
+  font-size: 30px;
+  outline: 0;
+  font-weight: bolder;
+  margin-right: 21px;
+}
+
+.handle-chat .status {
+  display: flex;
+}
+
+.status select {
+  background: linear-gradient(0deg, #168b7d, #168b7d);
+  outline: 0;
+}
