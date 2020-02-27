@@ -1,6 +1,8 @@
 import React from "react";
 import iconCheck from "../../assets/img/check.svg";
 import "./style.css";
+import user1 from "../../assets/img/avatar-user.png";
+import user2 from "../../assets/img/avatar-user2.png";
 
 export default function Message({ content, author, logged, date }) {
   return (
@@ -8,11 +10,7 @@ export default function Message({ content, author, logged, date }) {
       {!logged ? (
         <div className="message">
           <div className="contact">
-            <img
-              src="https://avatars2.githubusercontent.com/u/34342808?s=460&v=4"
-              alt=""
-              className="img-user"
-            />
+            <img src={user1} alt="" className="img-user" />
             <span className="user-name">
               {author} - <span>{date}</span>
             </span>
@@ -30,11 +28,7 @@ export default function Message({ content, author, logged, date }) {
       ) : (
         <div className="message-logged-user">
           <div className="contact">
-            <img
-              src="https://avatars2.githubusercontent.com/u/34342808?s=460&v=4"
-              alt=""
-              className="img-user"
-            />
+            <img src={user2} alt="" className="img-user" />
             <span className="user-name">
               {author} - <span>{date}</span>
             </span>

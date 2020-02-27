@@ -6,6 +6,7 @@
   border-radius: 20px 0px 0px 0px;
   flex-direction: row;
   justify-content: flex-start;
+  overflow: hidden;
 }
 
 .chat-element {
@@ -43,13 +44,13 @@
 
 .date-att-bg .line-1 {
   height: 0;
-  width: 252px;
+  width: 29.4%;
   border: 1px solid #dddddd;
   background: #dddddd;
 }
 
 .date-att-bg .line-2 {
-  width: 252px;
+  width: 29.4%;
   border: 1px solid #dddddd;
   height: 0;
   background: #dddddd;
@@ -88,4 +89,49 @@
 .text-input .icon-input:last-child {
   padding-left: 4px;
   margin-right: 10px;
+}
+
+@media (max-width: 1480px) {
+  .date-att-bg .line-1 {
+    width: 29%;
+  }
+
+  .date-att-bg .line-2 {
+    width: 29%;
+  }
+
+  .date-att {
+    font-size: 0.8em;
+    width: 250px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .date-att-bg .line-1 {
+    width: 28.5%;
+  }
+
+  .date-att-bg .line-2 {
+    width: 28.5%;
+  }
+
+  .date-att {
+    font-size: 0.8em;
+    width: 250px;
+  }
+}
+
+@media (max-width: 1380px) {
+  .date-att-bg .line-1 {
+    width: 28%;
+  }
+
+  .date-att-bg .line-2 {
+    width: 28%;
+  }
+
+  .date-att {
+    font-size: 0.8em;
+    width: 250px;
+  }
 }

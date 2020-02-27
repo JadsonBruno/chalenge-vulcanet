@@ -1,7 +1,8 @@
+import user1 from "../assets/img/avatar-user.png";
 const data = [
   {
     id: Math.random(),
-    avatar: "",
+    avatar: user1,
     name: "João da Silva",
     company: "ACME INC",
     messages: 3

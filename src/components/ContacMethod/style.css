@@ -25,14 +25,38 @@
 
 .whats-bg {
   background: #25d366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .method-chat-item .whats {
+  margin-bottom: -8px;
+  margin-left: 16px;
+}
+
+.method-chat-item .count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  background: #e33e1a;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 100px;
+  font-size: 9px;
+  line-height: 10px;
   color: #fff;
+  font-family: "Lato";
+}
+.method-chat-item span {
+  align-self: flex-end;
+  margin-bottom: 1px;
 }
 
 .method-chat-item .email {
   color: #e33e1a;
+  margin-left: 16px;
 }
 
 .method-chat-item .skype {

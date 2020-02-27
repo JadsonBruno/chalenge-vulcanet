@@ -5,7 +5,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import "./styles/global.css";
 import Contact from "./components/Contact";
-import InfoContact from "./components/InfoContact";
+import ContactInfo from "./components/ContactInfo";
 import Chat from "./components/Chat";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
     <div className="App">
       <Contact data={contacts} number={messages} />
       <Chat data={messages} />
-      <InfoContact />
+      <ContactInfo />
     </div>
   );
 }

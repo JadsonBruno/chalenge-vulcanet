@@ -1,12 +1,11 @@
 import React from "react";
 import "./style.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCalendarAlt,
-  faEnvelope,
-  faPhoneAlt,
-  faCommentDots
-} from "@fortawesome/free-solid-svg-icons";
+import calendar from "../../assets/img/calendar.svg";
+import envelope from "../../assets/img/envelope.svg";
+import skype from "../../assets/img/skype.svg";
+import telephone from "../../assets/img/telephone.svg";
+import comment from "../../assets/img/comment.svg";
+import whats from "../../assets/img/whats.svg";
 
 export default function ContactMethod() {
   return (
@@ -14,32 +13,34 @@ export default function ContactMethod() {
       <ul className="method-chat">
         <li className="method-chat-item">
           <div className="calendar">
-            <FontAwesomeIcon icon={faCalendarAlt} />
+            <img src={calendar} alt="" />
           </div>
         </li>
         <li className="method-chat-item whats-bg">
           <div className="whats">
-            <FontAwesomeIcon icon={["fab", "whatsapp"]} />
+            <img src={whats} alt="" />
           </div>
+          <span className="count">2</span>
         </li>
-        <li className="method-chat-item">
+        <li className="method-chat-item email-bg">
           <div className="email">
-            <FontAwesomeIcon icon={faEnvelope} />
+            <img src={envelope} alt="" />
           </div>
+          <span className="count">1</span>
         </li>
         <li className="method-chat-item">
           <div className="skype">
-            <FontAwesomeIcon icon={["fab", "skype"]} />
+            <img src={skype} alt="" />
           </div>
         </li>
         <li className="method-chat-item">
           <div className="phone">
-            <FontAwesomeIcon icon={faPhoneAlt} />
+            <img src={telephone} alt="" />
           </div>
         </li>
         <li className="method-chat-item">
           <div className="comment">
-            <FontAwesomeIcon icon={faCommentDots} />
+            <img src={comment} alt="" />
           </div>
         </li>
       </ul>

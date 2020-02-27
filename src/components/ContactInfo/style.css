@@ -49,6 +49,7 @@
   box-sizing: border-box;
   box-shadow: 0px 1px 0px #e5e5e5;
   border-radius: 4px;
+  outline: 0;
 }
 
 .btns .btnEdit {

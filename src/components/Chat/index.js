@@ -1,7 +1,6 @@
 import React from "react";
 import "./style.css";
 import Message from "../Message";
-
 import iconGalery from "../../assets/img/galery.svg";
 import iconPaper from "../../assets/img/papers.svg";
 import iconMicro from "../../assets/img/microphone.svg";

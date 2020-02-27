@@ -1,17 +1,17 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faPenAlt,
-  faTrashAlt,
-  faEnvelope
-} from "@fortawesome/free-solid-svg-icons";
+import { faPenAlt, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 import "./style.css";
+import skype from "../../assets/img/skype-info.svg";
+import envelope from "../../assets/img/email-info.svg";
+import skypeLg from "../../assets/img/skype-info-large.svg";
+import user from "../../assets/img/avatar-user.png";
 
-export default function() {
+export default function ContactInfo() {
   return (
     <aside className="side-info-contact">
       <div className="info-contact-2">
-        <img src="" alt="" className="img-info" />
+        <img src={user} alt="" className="img-info" />
         <div className="text-contact">
           João da Silva <span>ACME INC</span>
         </div>
@@ -41,7 +41,7 @@ export default function() {
           </li>
           <li>
             <div className="date-img">
-              <FontAwesomeIcon icon={["fab", "skype"]} />
+              <img src={skype} alt="" />
             </div>
             15/06/2019 (100 dias atrás)
           </li>
@@ -68,7 +68,7 @@ export default function() {
           </li>
           <li>
             <div className="date-img email">
-              <FontAwesomeIcon icon={faEnvelope} />
+              <img src={envelope} alt="" />
             </div>
             <div className="contact-method">
               <span>EMAIL</span>
@@ -77,7 +77,7 @@ export default function() {
           </li>
           <li>
             <div className="date-img">
-              <FontAwesomeIcon icon={["fab", "skype"]} />
+              <img src={skypeLg} alt="" />
             </div>
             <div className="contact-method">
               <span>SKYPE</span>
