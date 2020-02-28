@@ -27,6 +27,33 @@ const messages = [
       "Quisque enim purus, hendrerit et volutpat viverra, faucibus non neque. Suspendisse quis arcu lacus. Sed tincidunt dui at leo laoreet, vel suscipit mauris dignissim?",
     date: "07/10/2019 14h10",
     avatar: user1
+  },
+  {
+    id: Math.random(),
+    logged: false,
+    author: "João da Silva",
+    content:
+      "Quisque enim purus, hendrerit et volutpat viverra, faucibus non neque. Suspendisse quis arcu lacus. Sed tincidunt dui at leo laoreet, vel suscipit mauris dignissim?",
+    date: "07/10/2019 14h10",
+    avatar: user1
+  },
+  {
+    id: Math.random(),
+    logged: false,
+    author: "João da Silva",
+    content:
+      "Quisque enim purus, hendrerit et volutpat viverra, faucibus non neque. Suspendisse quis arcu lacus. Sed tincidunt dui at leo laoreet, vel suscipit mauris dignissim?",
+    date: "07/10/2019 14h10",
+    avatar: user1
+  },
+  {
+    id: Math.random(),
+    logged: false,
+    author: "João da Silva",
+    content:
+      "Quisque enim purus, hendrerit et volutpat viverra, faucibus non neque. Suspendisse quis arcu lacus. Sed tincidunt dui at leo laoreet, vel suscipit mauris dignissim?",
+    date: "07/10/2019 14h10",
+    avatar: user1
   }
 ];
 

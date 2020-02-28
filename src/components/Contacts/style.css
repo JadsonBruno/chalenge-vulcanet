@@ -104,3 +104,9 @@
   background: linear-gradient(0deg, #168b7d, #168b7d);
   outline: 0;
 }
+
+@media (max-width: 1100px) {
+  .side-contact {
+    display: none;
+  }
+}
