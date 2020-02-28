@@ -54,3 +54,33 @@
   padding: 8px 10px;
   margin-right: 20px;
 }
+
+@media (max-width: 1330px) {
+  .btn-actions button {
+    font-size: 12px;
+  }
+
+  .header input {
+    background: rgba(255, 255, 255, 0.15)
+      url("../../assets/img/searchIcon2.svg") no-repeat 210px center;
+    width: 220px;
+  }
+}
+
+@media (max-width: 1230px) {
+  .btn-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .header {
+    height: 100px;
+  }
+  .btn-actions button {
+    font-size: 11px;
+  }
+  .btn-actions .alt {
+    margin-bottom: 5px;
+  }
+}

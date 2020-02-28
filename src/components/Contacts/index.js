@@ -3,10 +3,9 @@ import "./style.css";
 import ContactElement from "../ContactElement";
 import iconAdd from "../../assets/img/add.svg";
 import iconArrow from "../../assets/img/arrow.svg";
-import user1 from "../../assets/img/avatar-user.png";
 import user2 from "../../assets/img/avatar-user2.png";
 
-export default function Contact({ data }) {
+export default function Contacts({ data }) {
   return (
     <aside className="side-contact">
       <div className="user">
@@ -34,7 +33,7 @@ export default function Contact({ data }) {
       </div>
       <ul className="contacts">
         {data.map(contact => (
-          <ContactElement key={contact.id} contact={contact} avatar={user1} />
+          <ContactElement key={contact.id} contact={contact} />
         ))}
       </ul>
     </aside>

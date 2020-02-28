@@ -1,11 +1,13 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPenAlt, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 import "./style.css";
 import skype from "../../assets/img/skype-info.svg";
 import envelope from "../../assets/img/email-info.svg";
 import skypeLg from "../../assets/img/skype-info-large.svg";
 import user from "../../assets/img/avatar-user.png";
+import whatsIcon from "../../assets/img/whatsapp.svg";
+import whatsLgIcon from "../../assets/img/whatsapp-lg.svg";
+import pen from "../../assets/img/pen.svg";
+import trash from "../../assets/img/trash.svg";
 
 export default function ContactInfo() {
   return (
@@ -18,10 +20,10 @@ export default function ContactInfo() {
       </div>
       <div className="btns">
         <button className="btnEdit">
-          <FontAwesomeIcon icon={faPenAlt} />
+          <img src={pen} alt="" />
         </button>
         <button className="btnTrash">
-          <FontAwesomeIcon icon={faTrashAlt} />
+          <img src={trash} alt="" />
         </button>
       </div>
       <div className="latest-chat">
@@ -29,13 +31,13 @@ export default function ContactInfo() {
         <ul className="chat-date">
           <li>
             <div className="date-img">
-              <FontAwesomeIcon icon={["fab", "whatsapp"]} />
+              <img src={whatsIcon} alt="" />
             </div>
             25/09/2019 (10 dias atrás)
           </li>
           <li>
             <div className="date-img">
-              <FontAwesomeIcon icon={["fab", "whatsapp"]} />
+              <img src={whatsIcon} alt="" />
             </div>
             15/09/2019 (20 dias atrás)
           </li>
@@ -59,7 +61,7 @@ export default function ContactInfo() {
         <ul className="list-info-contact">
           <li>
             <div className="date-img">
-              <FontAwesomeIcon icon={["fab", "whatsapp"]} />
+              <img src={whatsLgIcon} alt="" />
             </div>
             <div className="contact-method">
               <span>WHATSAPP</span>

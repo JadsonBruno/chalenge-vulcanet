@@ -1,26 +1,24 @@
 import React, { useState, useEffect } from "react";
-import data from "./services/mockAPI";
+import data from "./services/mockContacts";
 import messagesData from "./services/mockMessages";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { fab } from "@fortawesome/free-brands-svg-icons";
 import "./styles/global.css";
-import Contact from "./components/Contact";
+import Contacts from "./components/Contacts";
 import ContactInfo from "./components/ContactInfo";
 import Chat from "./components/Chat";
 
 function App() {
-  library.add(fab);
+  // hooks
   const [contacts, setContacts] = useState([]);
   const [messages, setMessages] = useState([]);
-
+  // effect hook
   useEffect(() => {
     setContacts(data);
     setMessages(messagesData);
-  }, [messages]);
+  }, []);
 
   return (
     <div className="App">
-      <Contact data={contacts} number={messages} />
+      <Contacts data={contacts} />
       <Chat data={messages} />
       <ContactInfo />
     </div>

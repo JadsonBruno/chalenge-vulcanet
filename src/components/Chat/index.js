@@ -5,7 +5,7 @@ import iconGalery from "../../assets/img/galery.svg";
 import iconPaper from "../../assets/img/papers.svg";
 import iconMicro from "../../assets/img/microphone.svg";
 import iconSendArrow from "../../assets/img/sendArrow.svg";
-import ContactMethod from "../ContacMethod";
+import ContactMethod from "../ContactMethod";
 import ChatHeader from "../ChatHeader";
 
 export default function Chat({ data }) {
@@ -13,7 +13,6 @@ export default function Chat({ data }) {
     <main className="chat">
       <ContactMethod />
       <div className="chat-element">
-        {/* transformar em componente */}
         <ChatHeader />
         <div className="chat-content">
           <div className="date-att-bg">
@@ -31,6 +30,7 @@ export default function Chat({ data }) {
               key={message.id}
               date={message.date}
               logged={message.logged}
+              avatar={message.avatar}
             />
           ))}
         </div>

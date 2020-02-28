@@ -12,35 +12,35 @@ const data = [
     avatar: "",
     name: "Nome do Usuário",
     company: "EMPRESA",
-    messages: []
+    messages: 0
   },
   {
     id: Math.random(),
     avatar: "",
     name: "Nome do Usuário",
     company: "EMPRESA",
-    messages: []
+    messages: 0
   },
   {
     id: Math.random(),
     avatar: "",
     name: "Nome do Usuário",
     company: "EMPRESA",
-    messages: []
+    messages: 0
   },
   {
     id: Math.random(),
     avatar: "",
     name: "Nome do Usuário",
     company: "EMPRESA",
-    messages: []
+    messages: 0
   },
   {
     id: Math.random(),
     avatar: "",
     name: "Nome do Usuário",
     company: "EMPRESA",
-    messages: []
+    messages: 0
   }
 ];
 
