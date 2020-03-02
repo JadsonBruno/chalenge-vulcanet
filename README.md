@@ -6,8 +6,8 @@ In the project directory, you can run:
 
 ### `npm run mock:api`
 
-Runs the mock api json-server.
-Open [http://localhost:3001/messages] or [http://localhost:3001/contacts].
+Runs the mock api json-server. (Advisable to run before running the application)
+Open [http://localhost:3001/messages] or [http://localhost:3001/contacts] to see.
 
 ### `yarn start`
 
