@@ -9,12 +9,18 @@
   box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.02);
   border-radius: 0px;
   height: 64px;
-  padding: 10px;
 }
 
 .header input {
-  background: rgba(255, 255, 255, 0.15) url("../../assets/img/searchIcon2.svg")
-    no-repeat 250px center;
+  width: 100%;
+  border: none;
+  outline: 0;
+}
+
+.header .input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   border: 1px solid #e0e0e0;
   border-radius: 4px;
   padding: 10px 10px 10px 8px;
@@ -26,6 +32,12 @@
 
 .chat-content {
   height: 100%;
+}
+
+.btn-actions {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
 }
 
 .btn-actions button {
@@ -54,35 +66,169 @@
   border-radius: 4px;
   color: #ffffff;
   padding: 8px 10px;
-  margin-right: 20px;
 }
 
-@media (max-width: 1330px) {
+.showContact {
+  display: none;
+}
+
+.burger-button-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 15px;
+  height: 22px;
+  background: inherit;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+.header button {
+  background: #ffffff;
+}
+.header button:focus {
+  outline: 0;
+}
+
+.burguer-button-info div {
+  width: 20px;
+  height: 0.25rem;
+  background: #636466;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  margin-bottom: 2px;
+  transform-origin: 5.5px;
+}
+
+.burger-button-info:focus {
+  outline: 0;
+}
+
+.translate {
+  padding: 10px;
+}
+.translate div:nth-child(2) {
+  display: none;
+}
+
+.translate div:first-child {
+  transform: rotate(45deg);
+}
+.translate div:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.grow {
+  height: 128px;
+}
+
+.grow .alt {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 1360px) {
   .btn-actions button {
     font-size: 12px;
   }
 
-  .header input {
-    background: rgba(255, 255, 255, 0.15)
-      url("../../assets/img/searchIcon2.svg") no-repeat 210px center;
+  .header .input {
     width: 220px;
   }
 }
 
 @media (max-width: 1230px) {
-  .btn-actions {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-  }
-  .header {
-    height: 100px;
-  }
   .btn-actions button {
     font-size: 11px;
   }
-  .btn-actions .alt {
-    margin-bottom: 5px;
+}
+
+@media (max-width: 935px) {
+  .showContact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-actions .solid {
+    margin-right: 10px;
+  }
+
+  button:last-child {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 710px) {
+  .header {
+    height: 128px;
+  }
+
+  .btns-responsive {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .solid {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 570px) {
+  .header .input {
+    width: 180px;
+  }
+
+  .btn-actions {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 555px) {
+  .header .input {
+    width: 160px;
+  }
+
+  .btn-actions {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 540px) {
+  .header .input {
+    width: 140px;
+  }
+
+  .btn-actions {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 430px) {
+  .header .input {
+    width: 120px;
+  }
+
+  .btn-actions {
+    font-size: 7px;
+  }
+
+  .burguer-button-info {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 415px) {
+  .btn-actions {
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 395px) {
+  .header {
+    height: 192px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
   }
 }

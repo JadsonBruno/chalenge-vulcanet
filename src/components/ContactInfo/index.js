@@ -9,9 +9,11 @@ import whatsLgIcon from "../../assets/img/whatsapp-lg.svg";
 import pen from "../../assets/img/pen.svg";
 import trash from "../../assets/img/trash.svg";
 
-export default function ContactInfo() {
+export default function ContactInfo({ showInfo }) {
   return (
-    <aside className="side-info-contact">
+    <aside
+      className={`side-info-contact ${!showInfo ? "showContactInfo" : ""}`}
+    >
       <div className="info-contact-2">
         <img src={user} alt="" className="img-info" />
         <div className="text-contact">

@@ -4,6 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm run mock:api`
+
+Runs the mock api json-server.
+Open [http://localhost:3001/messages] or [http://localhost:3001/contacts].
+
 ### `yarn start`
 
 Runs the app in the development mode.<br />

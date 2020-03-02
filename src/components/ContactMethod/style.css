@@ -1,6 +1,6 @@
 .side-bar {
   width: 64px;
-  background: inherit;
+  background: #f8fafc;
   box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.04);
   border-radius: 20px 0px 0px 0px;
 }
@@ -19,6 +19,58 @@
   font-size: 24px;
 }
 
+.show {
+  display: none;
+}
+
+.show button {
+  background: inherit;
+  font-size: 1.5em;
+}
+
+.burger-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 15px;
+  height: 22px;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+.burger-button div {
+  width: 20px;
+  height: 0.25rem;
+  background: #636466;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 7px;
+}
+
+.burger-button:focus {
+  outline: 0;
+}
+
+.move {
+  margin-left: -10px;
+}
+
+.translate div:nth-child(2) {
+  display: none;
+}
+
+.translate div:first-child {
+  transform: rotate(45deg);
+}
+
+.translate div:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
 .method-chat-item .calendar {
   color: #00a7cf;
 }
@@ -28,6 +80,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .method-chat-item .whats {
@@ -59,14 +112,14 @@
   margin-left: 16px;
 }
 
-.method-chat-item .skype {
-  color: #00aff0;
+@media (max-width: 1230px) {
+  .show {
+    display: flex;
+  }
 }
 
-.method-chat-item .phone {
-  color: #6a4aea;
-}
-
-.method-chat-item .comment {
-  color: #e87c28;
+@media (max-width: 935px) {
+  .burger-button {
+    margin-left: 12px;
+  }
 }

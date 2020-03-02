@@ -35,7 +35,7 @@ export default function Message({ content, author, logged, date, avatar }) {
             </div>
           </div>
           <div className="message-content-bg">
-            <span className="tooltip"></span>
+            <span className="inverted-tooltip"></span>
             <div className="message-content">
               <p className="text">{content}</p>
             </div>

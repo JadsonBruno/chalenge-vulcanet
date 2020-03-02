@@ -5,9 +5,9 @@ import iconAdd from "../../assets/img/add.svg";
 import iconArrow from "../../assets/img/arrow.svg";
 import user2 from "../../assets/img/avatar-user2.png";
 
-export default function Contacts({ data }) {
+export default function Contacts({ data, show }) {
   return (
-    <aside className="side-contact">
+    <aside className={`side-contact ${!show ? "showInfo" : ""}`}>
       <div className="user">
         <div className="user-info">
           <img src={user2} alt="" className="img" />

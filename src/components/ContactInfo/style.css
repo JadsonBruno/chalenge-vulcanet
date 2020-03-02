@@ -50,6 +50,8 @@
   box-shadow: 0px 1px 0px #e5e5e5;
   border-radius: 4px;
   outline: 0;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
 }
 
 .btns .btnEdit {
@@ -146,3 +148,22 @@ ul {
 .contact-method span:first-child {
   color: #8fbad6;
 }
+
+@media (max-width: 935px) {
+  .showContactInfo {
+    display: none;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 655px) {
+  .side-info-contact {
+    overflow: visible;
+  }
+}
+
+/* @media (max-width: 405px) {
+  .side-info-contact {
+    overflow: scroll;
+  }
+} */

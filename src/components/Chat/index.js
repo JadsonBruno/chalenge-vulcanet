@@ -1,19 +1,26 @@
 import React from "react";
 import "./style.css";
 import Message from "../Message";
-import iconGalery from "../../assets/img/galery.svg";
-import iconPaper from "../../assets/img/papers.svg";
-import iconMicro from "../../assets/img/microphone.svg";
-import iconSendArrow from "../../assets/img/sendArrow.svg";
 import ContactMethod from "../ContactMethod";
 import ChatHeader from "../ChatHeader";
+import Footer from "../Footer";
 
-export default function Chat({ data }) {
+export default function Chat({
+  data,
+  showContacts,
+  setShowContacts,
+  showContactInfo,
+  setShowContactInfo
+}) {
   return (
     <main className="chat">
-      <ContactMethod />
+      <ContactMethod show={showContacts} setShow={setShowContacts} />
       <div className="chat-element">
-        <ChatHeader />
+        <ChatHeader
+          showContacts={showContacts}
+          showContactInfo={showContactInfo}
+          setShowContactInfo={setShowContactInfo}
+        />
         <div className="chat-content">
           <div className="date-att-bg">
             <span className="line-1"></span>
@@ -34,21 +41,7 @@ export default function Chat({ data }) {
             />
           ))}
         </div>
-        <div className="text-input">
-          <input type="text" placeholder="Digite uma mensagem..." />
-          <a href="/" className="icon-input">
-            <img src={iconGalery} alt="" />
-          </a>
-          <a href="/" className="icon-input">
-            <img src={iconPaper} alt="" />
-          </a>
-          <a href="/" className="icon-input">
-            <img src={iconMicro} alt="" />
-          </a>
-          <a href="/" className="icon-input">
-            <img src={iconSendArrow} alt="" className="icon-input" />
-          </a>
-        </div>
+        <Footer />
       </div>
     </main>
   );
